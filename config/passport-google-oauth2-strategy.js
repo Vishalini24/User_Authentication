@@ -11,7 +11,7 @@ const User = require('../models/user.js');
 passport.use(new googleStretegy({
         clientID: process.env.clientID,
         clientSecret: process.env.clientSecret,
-        callbackURL: 'http://localhost:3000/user/auth/google/callback',
+        callbackURL: 'https://user-authentication-pqt9.onrender.com/user/auth/google/callback',
         passReqToCallback: true,
     },
     async function(request, accessToken, refreseToken, profile, done) {
